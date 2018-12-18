@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Movie from './movie';
 import axios from 'axios';
+import './movie_container.css'
 
 class MoviesContainer extends Component {
     constructor(props) {
@@ -24,7 +25,7 @@ class MoviesContainer extends Component {
             return <Movie info={movieInfo} key={index} />;
         })
         return (
-            <div>
+            <div className='movieContainer'>
                 {movieList}
             </div>
         )
